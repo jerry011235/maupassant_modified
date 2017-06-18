@@ -30,15 +30,12 @@ body {
 
 
 .body_container {
-    padding: 0 60px;
-    max-width: 1150px;
     margin: 0 auto;
 }
 .content_container {
-    padding-right: 130px;
-    padding-top: 20px;
-    width: 80%;
-    margin-left: 163px;
+    padding: 23px 151px;
+    width: 67%;
+    margin-left: 246px;
 }
 
 a, button.submit {
@@ -67,10 +64,12 @@ div {
     padding: 58px 0 0;
     text-align: center;
     position: relative;
-    background-image: url(/images/banner.jpg);
+    //注意：图片一定要选1920x1080以上的，否则宽度不能铺满屏幕最大宽度。    
+    background-image: url(http://pic1.5442.com/2015/0602/11/07.jpg);
     background-position: center center;
     background-repeat: no-repeat;
     height: 380px;
+    width: 100%;
     .site-name {
         margin-bottom: -3px;
         h1 {
