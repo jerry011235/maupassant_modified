@@ -598,9 +598,11 @@ pre {
 
 #totop.show {
     visibility: visible;
+    opacity: 0.3;
+}
+#totop.show:hover {
     opacity: 1;
 }
-
 
 
 /* *******************************************************
