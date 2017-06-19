@@ -1704,17 +1704,17 @@ figure.highlight,
 .wrap_toc {
     position: fixed;
     right: 0px;
-    bottom: 256px;
-    height: 300px;
-    width: 300px;
+    bottom: 250px;
+    height: 350px;
+    width: 350px;
     overflow: hidden;
-
-
 }
-.wrap_toc:hover #toc {
+.wrap_toc:hover #toc.fixed_show {
      visibility: visible;
-     opacity: 1
+     opacity: 1;
 } 
+
+
 /* toc*/
 .toc-article {
   //border: 1px solid #bbb;
@@ -1726,39 +1726,24 @@ figure.highlight,
 .toc-title {
   font-size: 120%;
 }
-.fixed {
-    position: fixed;
-    right: 30px;
-    top: 220px;
-    animation:slowup;
-    animation-duration:3s;
-    animation-fill-mode:forwards;
-    /* Safari and Chrome */
-    -webkit-animation:slowup;
-    -webkit-animation-duration:3s;
-    animation-fill-mode:forwards;
-}
-@keyframes slowup {
 
-	from {top:420px;}
-	to {top:220px;}
-}
-/* Safari and Chrome */
-@-webkit-keyframes slowup  {
-
-	from {top:420px;}
-	to {top:220px;}
+#toc.fixed_show {
+    //position: fixed;
+    //right: 30px;
+    //top: 220px;
+    opacity: 0;
+    transition:all 1s;
+    -moz-transition:all 1s; /* Firefox 4 */
+    -webkit-transition:all 1s; /* Safari and Chrome */
+    -o-transition:all 1s; /* Opera */
 }
 
 #toc {
   line-height: 1em;
   position: fixed;
   right: 30px;
-  top:420px;
-  transition:all 2s;
-  -moz-transition:all 2s; /* Firefox 4 */
-  -webkit-transition:all 2s; /* Safari and Chrome */
-  -o-transition:all 2s; /* Opera */
+  top: 220px;
+  display: block;
   visibility: hidden;
   opacity: 0;
   .toc {

@@ -24,7 +24,7 @@ block content
           div(id='toc' class='toc-article')
             div(class='toc-title')= __('contents')
             != toc(page.content, {list_number: theme.toc_number})        
-      script(type='text/javascript', src=url_for(theme.js) + '/tocfixed.js' + '?v=' + theme.version, async)  
+      script(type='text/javascript', src=url_for(theme.js) + '/tocfixed_show.js' + '?v=' + theme.version, async)  
     .post-content
       != page.content
     if theme.shareto == true
