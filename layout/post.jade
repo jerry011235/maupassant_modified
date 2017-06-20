@@ -20,7 +20,6 @@ block content
         span= ' ' + __('Discuss')
     if page.toc
       div(class='clear')
-        div(class='wrap_toc')
           div(id='toc' class='toc-article')
             div(class='toc-title')= __('contents')
             != toc(page.content, {list_number: theme.toc_number})        

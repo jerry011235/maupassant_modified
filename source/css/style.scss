@@ -486,9 +486,7 @@ div {
 /* middle*/
 
 @media print, screen and (max-width: 48em) {
-    .wrap_toc {
-        display: none;
-    }
+
     #header {
         height: 320px;
     }
@@ -523,9 +521,10 @@ div {
 
 /* small*/
 @media print, screen and (max-width: 35.5em) {
-    .wrap_toc {
+    #toc {
         display: none;
-    }
+    } 
+
     .post {
         width: 95%;
     }
@@ -1699,19 +1698,7 @@ figure.highlight,
     }
 }
 
-/*wrap_toc*/
-.wrap_toc {
-    position: fixed;
-    right: 0px;
-    bottom: 250px;
-    height: 350px;
-    width: 350px;
-    overflow: hidden;
-}
-.wrap_toc:hover #toc.fixed_show {
-     visibility: visible;
-     opacity: 1;
-} 
+
 
 
 /* toc*/
@@ -1727,15 +1714,18 @@ figure.highlight,
 }
 
 #toc.fixed_show {
-    //position: fixed;
-    //right: 30px;
-    //top: 220px;
     opacity: 0;
+    visibility: visible;
     transition:all 1s;
     -moz-transition:all 1s; /* Firefox 4 */
     -webkit-transition:all 1s; /* Safari and Chrome */
     -o-transition:all 1s; /* Opera */
 }
+#toc.fixed_show:hover {
+    visibility: visible;
+    opacity: 1;
+} 
+
 
 #toc {
   line-height: 1em;
