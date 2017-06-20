@@ -131,32 +131,6 @@ div {
     margin-top: 40px;
     padding-bottom: 20px;
     word-wrap: break-word;
-    .side_toc {
-      margin-bottom: 2em;
-        .toc-article {
-          //background: #eee;
-          max-width: 98%;
-          border: 0px solid #bbb;
-          border-radius: 15px;
-          margin: 1.5em 0 0.3em 1.5em;
-          padding: 1.2em 4em 0px 1em;
-        .toc-title {
-          font-size: 1.2em;
-          //text-align: center;
-          margin: 0;
-          position: relative;
-          left: 82px;
-      }
-      ol {
-        list-style: none;
-        line-height: 25px;
-          li a {
-            font-size: 1.1em;
-            font-weight: 500;
-        }
-      }
-    }
-  }
     .widget {
         margin-bottom: 30px;
         .widget-title {
@@ -483,6 +457,13 @@ div {
 }
 /* for archive page ends*/
 
+@media print, screen and (max-width: 1333px) {
+   #toc.fixed_show, #toc {
+    display: none; }
+  
+}
+
+
 /* middle*/
 
 @media print, screen and (max-width: 48em) {
@@ -521,10 +502,6 @@ div {
 
 /* small*/
 @media print, screen and (max-width: 35.5em) {
-    #toc {
-        display: none;
-    } 
-
     .post {
         width: 95%;
     }
